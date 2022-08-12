@@ -26,14 +26,9 @@ public class MainActivity extends AppCompatActivity {
         //Approach1 : txt1 is id of the textview also we don't need to initialise the variable for the textview
         //mainxml.txt1.setText("This is Main Activity Page"); // same as ViewBinding
 
-        //Approach2 : using model
-        Product product = new Product("this is product 1 "," this is random text 2");
-        mainxml.setProduct(product); // setProduct is automatically created by the Binding class
-
-
-
-
-
+        //Approach2 : using model class
+//        Product product = new Product("this is product 1 "," this is random text 2");
+//        mainxml.setProduct(product); // setProduct is automatically created by the Binding class
 
 
     }
