@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/curve.xml" value="0.1445" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27164662679036455" />
+        <entry key="app/src/main/res/layout/single_row_design.xml" value="0.2578125" />
       </map>
     </option>
   </component>

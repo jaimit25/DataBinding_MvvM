@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<layout>
+    
+    <data>
+        <variable
+            name="studentObject"
+            type="com.example.databinding_mvvm.Student" />
+    </data>
+    
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="14dp"
+    android:background="@drawable/curve"
+    android:layout_marginTop="3dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="@{studentObject.name}"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@{studentObject.course}"
+        android:textSize="24dp"
+        android:textColor="#D5D4D4"
+        />
+
+</LinearLayout>
+
+</layout>
