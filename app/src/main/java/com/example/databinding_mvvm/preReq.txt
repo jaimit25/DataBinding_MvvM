@@ -1,0 +1,20 @@
+Basics : Recycler view will provide multiple row layout
+
+Given :
+#Data source - it contains multiple object with data inside those object
+#XML Single Row Design
+
+Structure :
+1) we will have a Single Row Design of XML
+2) Adaptor class :  Consist of "onCreate(),onBind()" Method and "ViewHolder" class.
+
+        1) @onCreate : It will create the View when the code is running (Run-time).
+                      ie. we have onCreate() method in activity which will make view
+                      in runtime, also it setContentView() method which attaches the view.
+
+        2) @onBind   : It will merge the Data in the view which was created by the onCreate()
+                       method.
+        3) class ViewHolder :
+                       It will take the reference (ie. findViewById of the View and attach the view)
+                       of the XML design and attach it will the Code.
+
