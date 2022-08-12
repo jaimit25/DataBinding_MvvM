@@ -3,25 +3,6 @@
 <layout  xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Approach 1 : this is a variable to the textview-->
-    <!--    <data>-->
-    <!--        <variable-->
-    <!--            name="text1"-->
-    <!--            type="String" />-->
-    <!--    </data>-->
-
-    <!--    Approach 2 : using object to access the variable -->
-    <!--    in the type filed add package_name of the class and add "Dot" + class Name-->
-    <!--    com.example.databinding_mvvm  .  Product-->
-    <!--    variable name would be class name in small letters-->
-    <data>
-        <!--            this is an object which can has multiple class member ie. pname,txt-->
-        <variable
-            name="product"
-            type="com.example.databinding_mvvm.Product" />
-    </data>
-
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,40 +10,11 @@
         android:background="#2B2727"
         tools:context=".MainActivity">
 
-        <!--  Approach : 1 without using mode class  to access variable (use "@={}")  to access variable -->
-        <!--        <TextView-->
-        <!--            android:id="@+id/txt1"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:text="@={text1}"-->
-        <!--            android:textColor="#FFFFFF"-->
-        <!--            android:textSize="20dp"-->
-        <!--            android:textStyle="bold"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--            app:layout_constraintRight_toRightOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent" />-->
-
-
-        <!-- Approach : 2 Model class android:text = "@={var_name.ModelClassSetterName}" -->
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@={product.pname}"
-            android:textColor="#FFFFFF"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/txt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@={product.txt}"
+            android:text="hello"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
             android:textStyle="bold"
